@@ -297,6 +297,27 @@ ul, ol {
   display: none;
 }
 
+#error {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 1fr; 
+}
+
+#logo{
+  grid-column: 2/3;
+  background-color: white;
+}
+
+#logo img {
+  max-width: 100%; 
+  height: auto;
+}
+
+.error_message{
+  grid-column: 3/4;
+  color: #00274C;
+  background-color: white;
+}
+
 /* .health-image, .campus-image{
     display: flex;
     grid-column: 1 / -1;
@@ -359,6 +380,7 @@ ul, ol {
     width: 100%;
     height: auto;
     object-fit: contain;
+    grid-row: 3/4;
   }
   .content.overview{
     grid-column: 2/-1;
@@ -503,18 +525,3 @@ ul, ol {
 
 }
 
-#error {
-  display: grid;
-  grid-template-columns: 1fr 2fr 2fr 1fr; 
-}
-
-#logo{
-  grid-column: 2/3;
-  background-color: white;
-}
-
-.error_message{
-  grid-column: 3/4;
-  color: #00274C;
-  background-color: white;
-}
