@@ -297,25 +297,33 @@ ul, ol {
   display: none;
 }
 
-#error {
+
+
+
+
+.error_container{
   display: grid;
   grid-template-columns: 1fr 2fr 2fr 1fr; 
 }
-
-#logo{
+#block_m{
+  grid-row: 3/4;
   grid-column: 2/3;
-  background-color: white;
 }
-
-#logo img {
+#block_m img {
   max-width: 100%; 
   height: auto;
+  grid-column: 2/3;
+  grid-row: 3/4;
 }
 
 .error_message{
   grid-column: 3/4;
+  grid-row: 3/4;
   color: #00274C;
-  background-color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* .health-image, .campus-image{
@@ -380,6 +388,10 @@ ul, ol {
     width: 100%;
     height: auto;
     object-fit: contain;
+    grid-row: 3/4;
+  }
+
+  #logo{
     grid-row: 3/4;
   }
   .content.overview{
